@@ -1,9 +1,12 @@
 #include <iostream>
-#include<string>
-void Hello(){
-    std:: cout<< "Hello champ"; 
+#include <string>
+using namespace std ;
+void Hello( string champ){
+    std:: cout<< "Hello " + champ; 
+    
+
 }
 int main()
 {
-    Hello();
+    Hello("champ");
 }
