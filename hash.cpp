@@ -32,4 +32,8 @@ std:: cout<< Val.at("Namaste") << endl;
  std:: cout<< Val.erase("Hello") <<endl;
   std:: cout<< Val.erase("non-existent") <<endl;
   std:: cout<< Val.size() <<endl; 
+  //iterate over the map
+  for(auto i:Val){
+    std:: cout<< i.first + ":" << i.second <<endl ;
+  }
 }
