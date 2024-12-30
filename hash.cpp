@@ -23,5 +23,7 @@ std:: cout<< Val.at("Namaste") << endl;
  if we directly acces it the value is inserted hash and by default correspods to zero */
  std:: cout<<Val["non-existent"] <<endl;
  std:: cout<<Val.at("non-existent") <<endl;
- 
+ //Count function returns 1 if key exists in map else returns 0
+ std:: cout<< Val["champ"] <<endl ;
+ std:: cout<< Val["Wow"] <<endl;
 }
