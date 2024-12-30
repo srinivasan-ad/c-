@@ -14,4 +14,13 @@ pair<string,int> p2("Namaste",4);
 Val.insert(p2);
 //Type 3
 Val["Champ"] = 1;
+//Search
+// Type 1
+std::cout << Val["Hello"] << endl;
+// Type 2
+std:: cout<< Val.at("Namaste") << endl;
+ /*While searching a non-existent value in the hash if we use st function exception occurs instead 
+ if we directly acces it the value is inserted hash and by default correspods to zero */
+ std:: cout<<Val["non-existent"] <<endl;
+ 
 }
