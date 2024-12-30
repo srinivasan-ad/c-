@@ -22,5 +22,6 @@ std:: cout<< Val.at("Namaste") << endl;
  /*While searching a non-existent value in the hash if we use st function exception occurs instead 
  if we directly acces it the value is inserted hash and by default correspods to zero */
  std:: cout<<Val["non-existent"] <<endl;
+ std:: cout<<Val.at("non-existent") <<endl;
  
 }
