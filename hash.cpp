@@ -43,4 +43,15 @@ std:: cout<< Val.at("Namaste") << endl;
     std :: cout<< itr->first + "" << itr->second <<endl ;
     itr++;
   }
+  //Find returns a pointer pointing to the requested key
+  auto it = Val.find("Champ");
+  std:: cout << it->first + ":" << it->second <<endl;
+  //Extract function extracts a pair form the map which can be inserted in a new map
+  unordered_map<string,int> Val2 ;
+  auto extr_pair = Val.extract("Namaste");
+  Val2[extr_pair.key()] = extr_pair.mapped();
+   for(auto i:Val2){
+    std:: cout<< i.first + ":" << i.second <<endl ;
+  }
+
 }
