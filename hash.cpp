@@ -30,4 +30,5 @@ std:: cout<< Val.at("Namaste") << endl;
  std:: cout<< Val.size() <<endl; 
  //Erase function is used to delete a key value pair from the map
  std:: cout<< Val.erase("Hello") <<endl;
+  std:: cout<< Val.size() <<endl; 
 }
