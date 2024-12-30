@@ -24,6 +24,6 @@ std:: cout<< Val.at("Namaste") << endl;
  std:: cout<<Val["non-existent"] <<endl;
  std:: cout<<Val.at("non-existent") <<endl;
  //Count function returns 1 if key exists in map else returns 0
- std:: cout<< Val.count("champ") <<endl ;
+ std:: cout<< Val.count("Champ") <<endl ;
  std:: cout<< Val.count("Wow") <<endl;
 }
