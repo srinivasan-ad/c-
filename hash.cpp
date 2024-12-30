@@ -26,4 +26,6 @@ std:: cout<< Val.at("Namaste") << endl;
  //Count function returns 1 if key exists in map else returns 0
  std:: cout<< Val.count("Champ") <<endl ;
  std:: cout<< Val.count("Wow") <<endl;
+ //Erase function is used to delete a key value pair from the map
+ std:: cout<< Val.erase("Hello") <<endl;
 }
