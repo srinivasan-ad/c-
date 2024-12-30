@@ -36,4 +36,11 @@ std:: cout<< Val.at("Namaste") << endl;
   for(auto i:Val){
     std:: cout<< i.first + ":" << i.second <<endl ;
   }
+  //Using iterator
+  unordered_map<string,int> :: iterator itr = Val.begin();
+  while(itr != Val.end())
+  {
+    std :: cout<< itr->first + "" << itr->second <<endl ;
+    itr++;
+  }
 }
