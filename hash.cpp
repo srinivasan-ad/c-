@@ -29,6 +29,7 @@ std:: cout<< Val.at("Namaste") << endl;
  //Size function is used to find the size or length of the map
  std:: cout<< Val.size() <<endl; 
  //Erase function is used to delete a key value pair from the map
- std:: cout<< Val.erase("non-existent") <<endl;
+ std:: cout<< Val.erase("Hello") <<endl;
+  std:: cout<< Val.erase("non-existent") <<endl;
   std:: cout<< Val.size() <<endl; 
 }
