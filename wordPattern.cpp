@@ -42,8 +42,9 @@ int main()
     string sentence;
     std::cout << "Enter pattern string : " <<endl ;
     std::cin >> pattern;
+    cin.ignore();
     std::cout << "Enter sentence string : " <<endl ;
-     std::cin >> sentence;
+    getline(cin, sentence);
     result = wordPattern(pattern,sentence);
-    std::cout<< "Result is : " << result <<  endl;
+    std::cout<< "Result is : " << (result ? "True" : "False" ) <<  endl;
 }
