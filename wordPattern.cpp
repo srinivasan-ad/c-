@@ -37,5 +37,5 @@ return true;
     }
 int main()
 {
-    
+    string pattern;
 }
