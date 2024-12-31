@@ -44,4 +44,5 @@ int main()
     std::cin >> pattern;
     std::cout << "Enter sentence string : " <<endl ;
     result = wordPattern(pattern,sentence);
+    std::cout<< "Result is : " << result <<  endl;
 }
