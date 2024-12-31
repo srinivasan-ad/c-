@@ -38,7 +38,7 @@ return true;
 int main()
 {
     string pattern;
-    string s;
+    string sentence;
     std::cout << "Enter pattern string : " <<endl ;
     std::cin >> pattern;
     std::cout << "Enter sentence string : " <<endl ;
