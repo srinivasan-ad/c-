@@ -1,4 +1,4 @@
 # Description
 This is a repo for learning basics of c++
 ## Topics
-1) Hashmaps(Basics of hashmaps such as creation , manupulation and basics enough to start dsa with word pattern problem)
+1) Hashmaps(Basics of hashmaps such as creation , manupulation and basics enough to start dsa with word pattern problem as example)
