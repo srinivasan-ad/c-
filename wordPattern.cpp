@@ -39,4 +39,6 @@ int main()
 {
     string pattern;
     string s;
+    
+    std::cin >> pattern;
 }
