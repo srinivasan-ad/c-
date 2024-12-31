@@ -39,6 +39,6 @@ int main()
 {
     string pattern;
     string s;
-    
+    std::cout << "Enter pattern string : " ;
     std::cin >> pattern;
 }
