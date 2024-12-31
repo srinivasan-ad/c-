@@ -38,4 +38,5 @@ return true;
 int main()
 {
     string pattern;
+    string s;
 }
