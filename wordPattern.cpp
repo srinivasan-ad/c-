@@ -42,5 +42,5 @@ int main()
     std::cout << "Enter pattern string : " <<endl ;
     std::cin >> pattern;
     std::cout << "Enter sentence string : " <<endl ;
-    wordPattern(pattern,sentence);
+    result = wordPattern(pattern,sentence);
 }
