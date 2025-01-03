@@ -18,6 +18,9 @@ int main()
     std :: cout <<  "Size function -> Size before push_back : "  << Vals.size() <<endl ;
     Vals.push_back(5);
     std :: cout << "Size after push_back : " << Vals.size() << endl;
-
+Vals.pop_back();
+Vals.pop_back();
+Vals.pop_back();
+std :: cout << "Size after pop_back : " << Vals.size() << endl;
  
 }
