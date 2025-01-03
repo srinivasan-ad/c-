@@ -1,0 +1,18 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+int main()
+{
+    vector<int> nums;
+    vector<int> Vals = {1,2,3,4};
+    vector<int> dynamic(4,1);
+    for(int val : Vals)
+    {
+
+std :: cout<< "Array contents" << ":" << val <<endl;
+    }
+    for(int val : dynamic)
+    {
+        std:: cout << "Array contents : " << val << endl;
+    }
+}
