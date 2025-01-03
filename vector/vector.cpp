@@ -24,5 +24,17 @@ Vals.pop_back();
 std :: cout << "Size after pop_back : " << Vals.size() << endl;
 std:: cout << "Front func ->  Front of array is : " << Vals.front() << endl;
 std :: cout << "Back func ->  Back of array is : "  << Vals.back() << endl ;
- 
+nums.push_back(1);
+// nums.push_back(2);
+std :: cout << "Size : " << nums.size() << endl;
+std :: cout << "Capacity : " << nums.capacity() << endl;
+nums.push_back(3);
+nums.push_back(4);
+std :: cout << "Size : " << nums.size() << endl;
+std :: cout << "Capacity : " << nums.capacity() << endl;
+nums.push_back(3);
+nums.push_back(4);
+std :: cout << "Size : " << nums.size() << endl;
+std :: cout << "Capacity : " << nums.capacity() << endl;
+
 }
