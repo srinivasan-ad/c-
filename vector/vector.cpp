@@ -22,5 +22,7 @@ Vals.pop_back();
 Vals.pop_back();
 Vals.pop_back();
 std :: cout << "Size after pop_back : " << Vals.size() << endl;
+std:: cout << "Front func ->  Front of array is : " << Vals.front() << endl;
+std :: cout << "Back func ->  Back of array is : "  << Vals.back() << endl ;
  
 }
