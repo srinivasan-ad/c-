@@ -9,10 +9,12 @@ int main()
     for(int val : Vals)
     {
 
-std :: cout<< "Array contents" << ":" << val <<endl;
+       std :: cout<< "Array contents" << ":" << val <<endl;
     }
     for(int val : dynamic)
     {
         std:: cout << "Array contents : " << val << endl;
     }
+    std :: cout <<  "Size function -> Size : "  << Vals.size() <<endl ;
+ 
 }
