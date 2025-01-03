@@ -15,6 +15,9 @@ int main()
     {
         std:: cout << "Array contents : " << val << endl;
     }
-    std :: cout <<  "Size function -> Size : "  << Vals.size() <<endl ;
+    std :: cout <<  "Size function -> Size before push_back : "  << Vals.size() <<endl ;
+    Vals.push_back(5);
+    std :: cout << "Size after push_back : " << Vals.size() << endl;
+
  
 }
