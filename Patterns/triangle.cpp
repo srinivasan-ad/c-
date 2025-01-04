@@ -33,6 +33,32 @@ void revTriangle(int n)
     }
 
 }
+void floydTriangle(int n)
+{
+    int nums = 1 ;
+     for(int i = 0 ; i < n ; i++)
+    {
+        for(int j = 0 ; j <= i ; j++)
+        {
+            std:: cout<< nums << " ";
+            nums++;
+        }
+        std :: cout << std :: endl;
+    }
+}
+void invertedTriangle(int n)
+{
+    int num = 1;
+    for(int i = n ; i > 0 ; i--)
+    {
+        for(int j = 0 ; j < i ; j++)
+        {
+            std :: cout << num << " ";
+        }
+        num++;
+        std :: cout << std :: endl ;
+    }
+}
 int main()
 {
     int n;
@@ -41,6 +67,6 @@ int main()
     triangle(n);
     triangle2(n);
     revTriangle(n);
-
-   
+    floydTriangle(n);
+   invertedTriangle(n);
 }
