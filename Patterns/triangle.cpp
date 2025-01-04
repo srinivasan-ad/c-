@@ -21,6 +21,18 @@ void triangle2(int n)
         std :: cout << std :: endl;
     }
 }
+void revTriangle(int n)
+{
+    for(int i = 1 ; i <= n ; i++)
+    {
+        for(int j = i ; j >= 1 ; j--)
+        {
+            std:: cout<< j << " ";
+        }
+        std :: cout << std :: endl;
+    }
+
+}
 int main()
 {
     int n;
@@ -28,5 +40,7 @@ int main()
     std :: cin >> n ;
     triangle(n);
     triangle2(n);
+    revTriangle(n);
+
    
 }
