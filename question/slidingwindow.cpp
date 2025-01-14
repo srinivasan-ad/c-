@@ -26,7 +26,6 @@ int main() {
         }
     }
      
-     
       std::cout << maxi << std::endl;
     return 0;
 }
