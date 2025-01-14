@@ -25,7 +25,8 @@ int main() {
             maxi = std::max(maxi, r - l);
         }
     }
-
-    std::cout << maxi << std::endl;
+     
+     
+      std::cout << maxi << std::endl;
     return 0;
 }
