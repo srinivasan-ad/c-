@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-
 int main() {
     std::vector<int> nums = {1, 1, 0, 0, 1, 1, 0, 1};
     int k = 2;
