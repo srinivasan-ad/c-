@@ -1,15 +1,14 @@
 #include <iostream>
 #include<stack>
-using namespace std;
 int main(){
-    cout << "Using stack" << endl;
-    stack<int>Val;
+    std :: cout << "Using stack" << std ::  endl;
+    std :: stack<int>Val;
     //empty function
     if(Val.empty())
     {
-        cout << "stack is empty !" <<endl;
+        std :: cout << "stack is empty !"  << std ::  endl;
     }
     else{
-        cout << " stack is not empty  " <<endl;
+        std :: cout << " stack is not empty  "  << std :: endl;
     }
 }
