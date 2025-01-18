@@ -3,7 +3,7 @@
 int main(){
     std :: cout << "Using stack" << std ::  endl;
     std :: stack<int>Val;
-    //empty function
+    //empty function and size() funnction
     if(Val.empty())
     {
         std :: cout << "stack is empty !"  << std ::  endl;
