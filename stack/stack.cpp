@@ -11,4 +11,5 @@ int main(){
     else{
         std :: cout << " stack is not empty  "  << std :: endl;
     }
+    //push() operation
 }
