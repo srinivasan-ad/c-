@@ -21,6 +21,7 @@ int main()
     val.push(5);
     val.push(6);
     std ::cout << " stack is not empty  " << " " << val.size() << std ::endl;
+    //pop() operation
     val.pop();
     val.pop();
     std ::cout << " stack is not empty  " << " " << val.size() << std ::endl;
