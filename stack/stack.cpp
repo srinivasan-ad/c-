@@ -28,4 +28,11 @@ int main()
     //top() operation
     int top = val.top();
     std :: cout << "Top of stack is : " << top << std :: endl;
+    //stack print
+    while(!val.empty())
+    {
+        std :: cout <<  val.top() << std :: endl;
+        val.pop();
+    }
+     
 }
