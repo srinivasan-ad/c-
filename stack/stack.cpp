@@ -23,5 +23,8 @@ int main()
     std ::cout << " stack is not empty  " << " " << val.size() << std ::endl;
     val.pop();
     val.pop();
-    std ::cout << " stack is not empty  " << " " + val.size() << std ::endl;
+    std ::cout << " stack is not empty  " << " " << val.size() << std ::endl;
+    //top() operation
+    int top = val.top();
+    std :: cout << "Top of stack is : " << top << std :: endl;
 }
