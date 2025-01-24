@@ -11,7 +11,7 @@ int main()
     double k = 0.00;
     long l = 0;
     char c = 'a';
-    std :: string s = "a";
+    std :: string s = "acBbed";
     array<int,4> arr;
     vector<int> vec;
     // vec[4] = 5;
@@ -25,28 +25,33 @@ int main()
     // {
     //     cout << vec[i] << endl;
     // }
-    for(auto num : vec)
-    {
-        cout << num << endl;
-    }
+    // for(auto num : vec)
+    // {
+    //     cout << num << endl;
+    // }
     // vec.pop_back();
     // for(auto num : vec)
     // {
     //     cout << num << endl;
     // }
-    cout << "sorted series : ";
-    sort(vec.begin() , vec.end());
-    for(auto num : vec)
-    {
-        cout << num << endl;
-    }
-    cout << "reverse series : " ;
-    reverse(vec.begin()+1 , vec.end()-1);
-    for(auto num : vec)
-    {
-        cout << num << endl;
-    }
-
-
+    // cout << "sorted series : ";
+    // sort(vec.begin() , vec.end());
+    // for(auto num : vec)
+    // {
+    //     cout << num << endl;
+    // }
+    // cout << "reverse series : " ;
+    // reverse(vec.begin()+1 , vec.end()-1);
+    // for(auto num : vec)
+    // {
+    //     cout << num << endl;
+    // }
+//    sort(s.begin(),s.end());
+//    for(auto c : s)
+//     {
+//         cout << c << endl;
+//     }
+     int num = 60 - '0';
+     cout << num << endl;
 
 }
