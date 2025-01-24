@@ -53,5 +53,18 @@ int main()
 //     }
      int num = 60 - '0';
      cout << num << endl;
+     vector<vector<int>> vec2;
+     vec2.push_back(vec);
+     vec.push_back(9);
+     vec2.push_back(vec);
+     for(int i = 0 ; i < vec2.size() ; i++)
+     {
+        for(int j = 0 ; j < vec2[i].size() ; j++)
+        {
+              cout << vec2[i][j] ;
+        }
+              cout << "" <<endl;
+     }
+
 
 }
