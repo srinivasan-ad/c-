@@ -2,6 +2,7 @@
 #include <string>
 #include <array>
 #include <vector>
+#include <algorithm>
 using namespace std;
 int main()
 {
@@ -13,8 +14,39 @@ int main()
     std :: string s = "a";
     array<int,4> arr;
     vector<int> vec;
-    vec[0] = 5;
-    cout << vec[0] << endl;
+    // vec[4] = 5;
+    // cout << vec[4] << endl;
+    vec.push_back(7);
+    vec.push_back(6);
+    vec.push_back(10);
+    vec.push_back(9);
+    // cout << vec[0]<<endl;
+    // for(int i = 0 ; i < vec.size() ; i++)
+    // {
+    //     cout << vec[i] << endl;
+    // }
+    for(auto num : vec)
+    {
+        cout << num << endl;
+    }
+    // vec.pop_back();
+    // for(auto num : vec)
+    // {
+    //     cout << num << endl;
+    // }
+    cout << "sorted series : ";
+    sort(vec.begin() , vec.end());
+    for(auto num : vec)
+    {
+        cout << num << endl;
+    }
+    cout << "reverse series : " ;
+    reverse(vec.begin()+1 , vec.end()-1);
+    for(auto num : vec)
+    {
+        cout << num << endl;
+    }
+
 
 
 }
