@@ -1,3 +1,4 @@
+//singly linked list 
 #include <iostream>
 using namespace std;
 class node
@@ -26,6 +27,20 @@ void insertAtEnd(node *&head, int val)
     }
     temp->next = n;
 }
+
+void insertAtHead(node* &head , int val)
+{
+node* n = new node(val);
+if(head == NULL)
+{
+    head = n ;
+    return;
+
+}
+node* temp = head;
+n -> next = temp;
+head = n;
+}
 void display(node *&head)
 {
     node *temp = head;
@@ -43,6 +58,7 @@ int main()
     node *head = NULL;
     insertAtEnd(head, 0);
     insertAtEnd(head, 1);
+    insertAtHead(head,3);
     display(head);
     cout << "hello";
 }
