@@ -157,7 +157,20 @@ void insertAtAnyPosition(node* &head , int val , int pos)
     if (nextNode != NULL)
         nextNode->prev = n;
 }
-
+void reverseDisplay(node* &head)
+{
+    node* temp = head;
+ while(temp -> next != NULL)
+ {
+    temp = temp -> next;
+ }
+ while(temp  != NULL)
+ {
+    cout << temp -> data << " " << "->" << " ";
+    temp = temp -> prev;
+ }
+ cout << "NULL" << endl;
+}
 void display(node *&head)
 {
     node *temp = head;
@@ -174,10 +187,13 @@ void display(node *&head)
 int main()
 {
     node *head = NULL;
-insertAtAnyPosition(head , 1 , 5);
+insertAtAnyPosition(head , 1 , 1);
     display(head);
     insertAtAnyPosition(head , 4, 2);
  insertAtAnyPosition(head,3,1);
+ insertAtAnyPosition(head,5,4);
+ insertAtAnyPosition(head , 2, 2);
     display(head);
+    reverseDisplay(head);
     cout << "wow";
 }
