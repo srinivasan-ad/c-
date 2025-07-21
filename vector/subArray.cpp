@@ -4,7 +4,7 @@
 using namespace std;
 int main()
 {
-    vector<int> arr = {1,-2,3,4,-5};
+    vector<int> arr = {23,11,-34,22,69,11,-88,-11,12};
     int n = arr.size();
     int maxi = INT_MIN;
     
@@ -33,18 +33,40 @@ int main()
 
     //Kadane
     int cur = 0;
-    int start = 0;
-    int end = 0; 
     int tempstart = 0;
+    int start = 0;
+    int end = 0;
     for(int i = 0 ; i < n ; i++)
     {
         cur+= arr[i];
-        maxi = max(maxi,cur);
+        if(cur > maxi)
+        {
+           maxi = cur;
+           start = tempstart;
+           end = i;
+
+        }
         if(cur < 0)
         {
             cur = 0;
+            tempstart = i + 1;
         }
     }
     cout << "Max sum of Subarray is : " << maxi << endl;
+    cout << "Range of Subarray : " << start << "->" << end << endl;
+    for(int i = start ; i <= end ; i++)
+    {
+        if(i == end)
+
+        {
+            cout << arr[i] << "]" << endl;
+        }
+        else if(i == start)
+        {
+            cout << "[" << arr[i] << ",";
+        }
+        else
+        cout << arr[i] << ",";
+    }
     return 0;
 }
