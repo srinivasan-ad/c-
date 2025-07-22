@@ -4,7 +4,7 @@
 using namespace std;
 int main()
 {
-    vector<int> arr = {23,11,-34,22,69,11,-88,-11,12};
+    vector<int> arr = {1,2,3,-2,5};
     int n = arr.size();
     int maxi = INT_MIN;
     
