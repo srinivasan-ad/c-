@@ -138,7 +138,42 @@ void MergeSort(vector<int>& arr , int low , int high)
    MergeSort(arr,mid+1,high);
    Merge(arr,low,mid,high);
 } 
+//Partioton function for quick sort
+int Partition(vector<int>& arr, int low , int high)
+{
+    int pivot = arr[low];
+    int i = low + 1;
+    int j = high;
+    while(i < j)
+    {
+        while(arr[i] <= pivot && i <= high-1)
+        {
+            i++;
+        }
 
+        while(arr[j] >= pivot && j >= low+1)
+        {
+            j--;
+        }
+        if(i < j)
+        {
+            swap(arr[i],arr[j]);
+        }
+    }
+    swap(arr[low] , arr[j]);
+    return j;
+}
+//Quick Sort i and j to iterate the arry swap greater and lesser
+void QuickSort(vector<int>& arr , int low , int high  )
+{
+    if(low < high)
+    {
+        int pi = Partition(arr,low,high);
+        QuickSort(arr,low,pi-1);
+        QuickSort(arr,pi+1,high);
+
+    }
+}
 int main()
 {
    vector<int> arr = {3, 2, 3, 1, 2, 3, 0};
@@ -147,7 +182,8 @@ int main()
 // InsertionSort(arr);
 // MergeSort(arr , 0 , arr.size()-1);
 // Bubble(arr,0,arr.size()-1);
-Insertion(arr,1,1);
+// Insertion(arr,1,1);
+QuickSort(arr,0,arr.size()-1);
 Print(arr);
    cout <<  endl;
 }
