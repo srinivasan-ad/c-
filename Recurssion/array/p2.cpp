@@ -14,11 +14,11 @@ bool isPalindrome(string s , int p)
 bool isPallindrome(string s , int l , int r)
 {
    if(l >= r) return true;
-   if(s[l] == ' ')
+   if(s[l] == ' ' || !isalnum(s[l]))
    {
      return isPallindrome(s,l+1,r);
    }
-   if(s[r] == ' ')
+   if(s[r] == ' ' || !isalnum(s[r]))
    {
     return isPallindrome(s,l,r-1);
    }
